@@ -1,0 +1,54 @@
+/* Filter button section */
+
+.navigation-btn {
+    background: var(--accent-color);
+    border-radius: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    color: var(--title-text-color);
+  }
+
+.navigation-btn {
+    background: var(--back-team-color)
+}
+
+.navigation-btn:hover,
+.navigation-btn:focus {
+    background-color: var(--accent-color) ;
+}
+   
+.nav-link-b {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}  
+  
+.nav-link-b {
+    color: var(--accent-color) ;
+}
+
+.nav-link-a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+/* Portfolio section */
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.portfolio-desc {
+    font-size: 16px;
+    line-height: 1.89;
+    color: var(--discription-text-color);
+}

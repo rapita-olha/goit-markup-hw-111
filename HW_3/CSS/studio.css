@@ -1,0 +1,269 @@
+:root {
+    --main-font: "Roboto" , sans-serif;
+    --secondary-font: "Raleway" , sans-serif;
+    --logo-color: #000000;
+    --accent-color: #2196F3;
+    --title-text-color: #212121;
+    --discription-text-color: #757575;
+    --background-color: #2f303a;
+    --white-text-back-color: #ffffff;
+    --back-team-color: #f5f4fa;
+    --background-second: #E5E5E5;
+}
+
+body {
+    font-family: var(--main-font) ;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.address {
+    font-style: normal;
+}
+
+/* Header section */
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.logo-web-header {
+    color: var(--logo-color);
+}
+
+.logo-web-footer {
+    color: var(--white-text-back-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color) ;
+}
+
+.nav-link-a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.nav-link-a:hover,
+.nav-link-a:focus {
+    color: var(--accent-color) ;
+}
+
+:current {
+    color: var(--accent-color)
+}
+
+/* Contacts section */
+.mail-link,
+.tel-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.tel-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--discription-text-color);
+}
+
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+    color: var(--accent-color);
+}
+
+/* Hero section */
+
+.hero {
+    background-color: var(--background-color);
+}    
+
+.modal-btn {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: var(--accent-color);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--white-text-back-color);
+    border-radius: 4px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text-back-color);
+ }
+
+/* Features section */
+
+.features {
+    background-color: var(--white-text-back-color);
+}
+.title-features { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    
+}
+
+.features-dis {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--discription-text-color); 
+}
+
+/* What are we doing section */
+
+.what-we-do {
+    background-color: var(--white-text-back-color);
+}
+
+.title-chapter {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--title-text-color);
+}
+
+/* Our team section */
+
+.team {
+    background-color: var(--back-team-color);
+}
+
+.title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+}
+.title-staff {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.staff-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--discription-text-color);
+}
+
+/* Footer section */
+    .footer {
+        background-color: var(--background-color);
+    }
+
+.address {
+    font-style: normal;
+}
+
+
+
+.adr-str {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-text-back-color); 
+}
+
+.mail-address,
+.tel-address {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);   
+}
+
+.adr-str:hover,
+.adr-str:focus {
+    color: var(--accent-color) ;
+}
+
+.mail-address:hover,
+.mail-address:focus {
+    color: var(--accent-color) ;
+}
+
+.tel-address:hover,
+.tel-address:focus {
+    color: var(--accent-color) ;
+}
+
+.container-header {
+    height: 90px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-second);
+}
+
+.container-contact {
+    height: 16px;
+    width: 135px;
+    bottom: 32px;
+    top: 32px;
+    border-radius: nullpx;
+
+}
+
+
+.container-hero {
+    width: 1600px;
+    height: 613px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+}
