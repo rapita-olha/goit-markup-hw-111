@@ -1,8 +1,10 @@
 /* Filter button section */
 
 .navigation-btn {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
     background: var(--accent-color);
-    border-radius: 0px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -17,9 +19,11 @@
 .navigation-btn:hover,
 .navigation-btn:focus {
     background-color: var(--accent-color) ;
+    cursor: pointer;
 }
    
 .nav-link-b {
+    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -39,7 +43,40 @@
 }
 /* Portfolio section */
 
+.filter-btn-list {
+    display: flex;
+}
+
+.project-section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 94px 495px 34px 495px;
+}
+
+.filter-btn-item {
+    margin-right: 8px;
+}
+
+.filter-btn-item:nth-child(5) {
+    margin-right: 0;
+}
+
+.portfolio {
+    padding-bottom: 94px;
+}
+
+.content-card {
+    padding: 20px 24px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .portfolio-title {
+    /* margin-top: 20px; */
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -47,7 +84,28 @@
     color: var(--title-text-color);
 }
 
+.portfolio-project {
+    border-bottom: 1px solid #eeeeee;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-project:nth-child(3) {
+    margin-right: 0;
+}
+
+ /* .portfolio-projec:not(:nth-child(3)) {
+    margin-right: 30px} */
+
+.portfolio-project:nth-last-child(-n +3) {
+    margin-bottom: 0;
+}
+
+/* .portfolio-projec:not(:nth-last-child(-n +3)) {
+    margin-bottom: 30px} */
+
 .portfolio-desc {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.89;
     color: var(--discription-text-color);

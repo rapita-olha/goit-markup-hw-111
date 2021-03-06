@@ -12,11 +12,9 @@
 </head>
 
     <body>
-
-    <div class="container-header">
+         <!--Header-->
         <header class="header">
-    
-        <!--Header-->
+            <div class="container container-header">
         <nav class="header-nav">
             <a class="logo link" href="#" lang="en">Web<span class="logo-web-header">Studio</span></a>
 
@@ -26,90 +24,91 @@
              <li class="nav-list-item"><a class="link nav-link" href="#">Контакты</a></li>
            </ul>
         </nav> 
-    </div>
 
         <!--Контакти-->
-    <div class="container-contact">
         <ul class="list list-contact">
            <li><a class=" mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
            <li><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
         </ul>    
-    </div>
+       </div>
      </header> 
 
-     <div class="container-hero">
+     
      <main>
         <!--Hero-->
           <section class="hero">
              <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
              <button class="modal-btn" type="button">Заказать услугу</button> 
          </section>
-    </div> 
 
       <!--features-->
-      <section class="features"> 
-     
-     <h2 class="hidden-title" hidden>особенности</h2>
+      <section class="features">
+        <div class="container">
+     <h2 class="hidden-title visually-hidden" hidden>особенности</h2>
 
      <ul class="list list-features">
-         <li>
+         <li class="title-f">
          <h3 class="title-features">Внимание к деталям</h3>
          <p class="features-dis">Идейные соображения, а также <br/> начало повседневной работы по <br/> формированию позиции.</p>
         </li>
      
-        <li>
+        <li class="title-f">
         <h3 class="title-features">Пунктуальность</h3>
         <p class="features-dis">Задача организации, в особенности <br/> же рамки и место обучения кадров <br/> влечет за собой.</p>
         </li>
     
-        <li>
+        <li class="title-f">
         <h3 class="title-features">Планирование</h3>
         <p class="features-dis">Равным образом консультация с <br/> широким активом в значительной <br/> степени обуславливает.</p>
         </li>
     
-        <li>
+        <li class="title-f">
         <h3 class="title-features">Современные технологии</h3>
         <p class="features-dis">Значимость этих проблем настолько <br/> очевидна, что реализация плановых <br/> заданий.</p>
         </li>
-    </ul>
+       </ul>
+     </div>
     </section>
 
-<!--What-are-we-doing-->
+    <!--What-are-we-doing-->
     <section class="what-we-do">
-        
-    <h2 class="title-chapter">Чем мы занимаемся</h2>
-        
+        <div class="container">   
+    <h2 class="title-chapter">Чем мы занимаемся</h2>    
     <ul class="list img-what-we-do">
-        <li><img
+        <li class="about-list-item">
+            <img class="about-list-img"
                 src="./images/image_(9).jpg" 
                  alt="пальці працюють на клавіатурі планшету" 
                  width="370"
                  height="294">
         </li>
 
-        <li><img
+        <li class="about-list-item">
+            <img class="about-list-img"
                 src="./images/image_(11).jpg" 
                  alt="дівчина тримає в руках моб, на фоні ноутбука" 
                  width="370"
                  height="294">
         </li>
 
-        <li><img
+        <li class="about-list-item">
+            <img class="about-list-img"
                 src="./images/image_(12).jpg" 
                  alt="кольова гама екрану планшета, на фоні компютера" 
                  width="370"
                  height="294">
         </li>
-    </ul>
+       </ul>
+      </div>
     </section>
 
    <!--Our-team--> 
     <section class="team">
-        
+        <div class="container">   
     <h2 class="title-team">Наша команда</h2>
-
     <ul class="list list-team">
-        <li class="list-team-item"><img src="./images/image_(13).jpg" 
+        <li class="list-team-item">
+            <img class="face" src="./images/image_(13).jpg" 
                  alt="на фото Игорь Демьяненко"  
                  width="270"
                  height="260">
@@ -119,7 +118,8 @@
         </li>
 
 
-        <li class="list-team-item"><img src="./images/image_(14).jpg" 
+        <li class="list-team-item">
+            <img class="face" src="./images/image_(14).jpg" 
                  alt="на фото Ольга Репина"  
                  width="270"
                  height="260">
@@ -129,7 +129,8 @@
         </li>
 
 
-        <li class="list-team-item"><img src="./images/image_(15).jpg" 
+        <li class="list-team-item">
+            <img class="face" src="./images/image_(15).jpg" 
                  alt="на фото Николай Тарасов"  
                  width="270"
                  height="260">
@@ -138,7 +139,8 @@
         </li>
 
 
-        <li><img src="./images/image_(16).jpg" 
+        <li class="list-team-item">
+            <img class="face" src="./images/image_(16).jpg" 
                  alt="на фото Михаил Ермаков"  
                  width="270"
                  height="260">
@@ -146,11 +148,14 @@
         <p class="staff-position" lang="en">UI Designer</p>
         </li>
     </ul>
-    </section>
+   </div>
+  </section>
+
     </main>
 
     <!--Footer-->
     <footer class="footer">
+        <div class="container">
        
         <a class="logo link" href="#" lang="en">Web<span class="logo-web-footer">Studio</span></a>
         <address class="address">
@@ -171,7 +176,7 @@
                 
             </ul>
             </address>
-    
+         </div>
     </footer>
 
    </body>
