@@ -41,16 +41,42 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
-/* Portfolio section */
+
+
+    <!--Hero-->
+
+.project-section {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 
 .filter-btn-list {
     display: flex;
+    justify-content: center;
 }
 
-.project-section {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 94px 495px 34px 495px;
+.navigation-btn {
+    min-width: 73px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: var(--back-team-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    cursor: pointer;
+    color: var(--back-team-color);
+    background-color: var(--accent-color);
 }
 
 .filter-btn-item {
@@ -58,24 +84,37 @@
 }
 
 .filter-btn-item:nth-child(5) {
-    margin-right: 0;
+    margin-right: 8px;
 }
 
-.portfolio {
-    padding-bottom: 94px;
-}
-
-.content-card {
-    padding: 20px 24px;
-}
+/* Portfolio section */
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding-bottom: 94px;
+}
+
+.portfolio-item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) /3);
+}
+
+.content-card {
+    display: block;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 .portfolio-title {
-    /* margin-top: 20px; */
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -84,29 +123,11 @@
     color: var(--title-text-color);
 }
 
-.portfolio-project {
-    border-bottom: 1px solid #eeeeee;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.portfolio-project:nth-child(3) {
-    margin-right: 0;
-}
-
- /* .portfolio-projec:not(:nth-child(3)) {
-    margin-right: 30px} */
-
-.portfolio-project:nth-last-child(-n +3) {
-    margin-bottom: 0;
-}
-
-/* .portfolio-projec:not(:nth-last-child(-n +3)) {
-    margin-bottom: 30px} */
-
 .portfolio-desc {
+    display: inline-block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.89;
+    letter-spacing: 0.03em;
     color: var(--discription-text-color);
 }
