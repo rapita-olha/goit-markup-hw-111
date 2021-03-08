@@ -140,6 +140,9 @@ p {
 
 /* .Contacts section */
 
+.list-contact .nav-list-item + .nav-list-item + .nav-list-item {
+    margin-left: 50px;
+}
 .list-contact {
     display: flex;
     margin-left: auto;
