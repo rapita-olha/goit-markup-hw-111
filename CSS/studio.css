@@ -14,6 +14,7 @@
 body {
     font-family: var(--main-font) ;
     letter-spacing: 0.03em;
+    background-color: var(--white-text-back-color);
 }
 
 h1,
@@ -46,6 +47,21 @@ p {
 }
 
 /* Header section */
+
+
+.header {
+    border-bottom: 1px solid var(--back-team-color);
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 
 .visually-hidden {
     position: absolute !important;
@@ -83,7 +99,6 @@ p {
 }
 
 .nav-link {
-    margin-right: 50px;
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -94,13 +109,25 @@ p {
     color: var(--title-text-color);
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
+.nav-link-a {
+    display: block;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-color);
 }
 
 .nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: 94px;
+}
+
+.nav-list .nav-list-item + .nav-list-item + .nav-list-item {
     margin-left: 50px;
 }
 
@@ -109,14 +136,7 @@ p {
     color: var(--accent-color) ;
 }
 
-.nav-link-a {
-    margin-right: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
+
 
 .nav-link-a:hover,
 .nav-link-a:focus {
@@ -127,20 +147,10 @@ p {
     color: var(--accent-color)
 }
 
-.container-header {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--back-team-color);
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-}
 
 /* .Contacts section */
 
-.list-contact .nav-list-item + .nav-list-item + .nav-list-item {
+.list-contact .nav-list-item + .nav-list-item {
     margin-left: 50px;
 }
 .list-contact {
@@ -223,6 +233,7 @@ p {
 
 .features {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .features-item {
     display: flex;
@@ -301,31 +312,26 @@ p {
 
 .list-team {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 30px;
 }
 
-.list-team-item {
-    margin-right: 30px;
-}
 
 .title-staff {
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-align: center;
     color: var(--title-text-color);
 }
 
-.face {
-    margin-bottom: 30px;
-}
-
 .staff-position {
-    font-weight: 400;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
     color: var(--discription-text-color);
 }
 
