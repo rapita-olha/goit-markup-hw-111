@@ -9,6 +9,7 @@
     --white-text-back-color: #ffffff;
     --back-team-color: #f5f4fa;
     --background-second: #E5E5E5;
+    --background-btn-hover: #188ce8;
 }
 
 body {
@@ -25,12 +26,13 @@ p {
     margin: 0;
 }
 
-.ul ol {
+ul, 
+ol {
     margin: 0;
     padding: 0;
 }
 
-.img {
+img {
     display: block;
 }
 
@@ -50,10 +52,12 @@ p {
 
 
 .header {
+    padding-top: 25px;
+    padding-bottom: 24px;
     border-bottom: 1px solid var(--back-team-color);
 }
 
-.container-header {
+.header .container {
     display: flex;
     align-items: center;
 }
@@ -88,6 +92,7 @@ p {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-right: 93px;
 }
 
 .logo-web-header {
@@ -104,32 +109,30 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: var(--title-text-color);
 }
 
-.nav-link-a {
+/* .nav-link-a {
     display: block;
-    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--accent-color);
-}
+} */
 
 .nav-list {
     display: flex;
     align-items: center;
-    margin-left: 94px;
+    
 }
 
-.nav-list .nav-list-item + .nav-list-item + .nav-list-item {
-    margin-left: 50px;
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
 }
+
 
 .nav-link:hover,
 .nav-link:focus {
@@ -138,8 +141,7 @@ p {
 
 
 
-.nav-link-a:hover,
-.nav-link-a:focus {
+.link.nav-link.current {
     color: var(--accent-color) ;
 }
 
@@ -150,18 +152,19 @@ p {
 
 /* .Contacts section */
 
-.list-contact .nav-list-item + .nav-list-item {
-    margin-left: 50px;
+.contacts-list-item:not(:last-child) {
+    margin-right: 50px;
 }
 .list-contact {
     display: flex;
+    align-items: center;
     margin-left: auto;
 }
 
 .mail-link,
 .tel-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -170,7 +173,6 @@ p {
 }
 
 .tel-link {
-    margin-left: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -212,6 +214,13 @@ p {
     background-color: var(--accent-color);
     color: var(--white-text-back-color);
     cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn-focus {
+    background-color: var(--background-btn-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-title {
@@ -298,6 +307,7 @@ p {
 .team {
     background-color: var(--back-team-color);
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .title-team {
@@ -312,26 +322,43 @@ p {
 
 .list-team {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-left: 30px;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.list-team-item {
+    flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 3px hsla(0, 0%, 0%, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.description {
+    padding: 30px 59px;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 
 .title-staff {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
     color: var(--title-text-color);
 }
 
 .staff-position {
-    padding-bottom: 30px;
-    font-size: 16px;
-    line-height: 1.18;
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-align: center;
     color: var(--discription-text-color);
 }
 
@@ -343,12 +370,17 @@ p {
     background-color: var(--background-color);
 }
 
-.logo-web-footer {
+.logo.logo-footer.link {
+    display: block;
     margin-bottom: 20px;
+    margin-right: 0;
 }
+/* .logo-web-footer {
+    margin-bottom: 20px;
+} */
 
 .address {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-style: normal;
 }
 
